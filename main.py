@@ -13,7 +13,7 @@ to_addy = os.environ['RECEIVER_MAIL']
 
 
 # Price you want to buy the product.
-DEAL_PRICE = 500 
+DEAL_PRICE = # Price you want to deal.
 
 
 # Function to check price of the item
@@ -23,7 +23,7 @@ def check_price():
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
     }
     # URL of your product.
-    AMAZON_URL = "https://www.amazon.in/Amazon-Brand-Premium-High-Carbon-Stainless/dp/B079YFGSXQ/?_encoding=UTF8&pd_rd_w=iKwFP&pf_rd_p=ee853eb9-cee5-4961-910b-2f169311a086&pf_rd_r=G1WEGT6RRWM8WTK6X88C&pd_rd_r=538d828e-7012-44d7-8b41-16f02fd98041&pd_rd_wg=shzFe&ref_=pd_gw_ci_mcx_mr_hp_atf_m"
+    AMAZON_URL = "LINK TO YOUR ITEM"
 
     response = rq.get(url=AMAZON_URL, headers=HEADERS)  # Using GET method to get response from product url.
     product_web_page = response.text  # Storing response as text.
